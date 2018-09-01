@@ -52,7 +52,7 @@
         <scope>test</scope>
     </dependency>
     <dependency>
-			<groupId>oracle1111</groupId>
+			<groupId>oracle</groupId>
 			<artifactId>ojdbc-jdbc</artifactId>
 			<version>6</version>
 		</dependency>

@@ -58,6 +58,6 @@
 		</dependency>
 </dependencies>
 	<build>
-		<finalName>BootDemoNavneet</finalName>
+		<finalName>BootDemo</finalName>
 	</build>
 </project>

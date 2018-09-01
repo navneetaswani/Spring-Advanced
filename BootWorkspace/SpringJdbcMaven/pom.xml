@@ -1,0 +1,92 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" >
+	<!-- Project Description -->
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>edu.aspire</groupId>
+	<artifactId>SpringJdbcMaven</artifactId>
+	<version>1.0</version>
+	<packaging>jar</packaging>
+	<name>SpringJdbcMaven</name>
+	<url>www.java2aspire.com</url>
+
+	<!-- Dependency Management -->
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>4.3.2.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- Manually create folder in Local Repository -->
+		<dependency>  
+			<groupId>oracle</groupId>
+			<artifactId>ojdbc-jdbc</artifactId>
+			<version>6</version>
+		</dependency>
+		
+	<!-- Specify System Path of jar file -->
+	<!-- <dependency>
+			<groupId>oracle</groupId>
+			<artifactId>ojdbc</artifactId>
+			<version>6</version>
+			<scope>system</scope>
+			<systemPath>F:/STSWorkspaces/SPRING ADVANCED/1.Meterial/Softwares/jars/ojdbc-6.jar</systemPath>
+		</dependency> 
+	 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>4.3.2.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>4.3.2.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
+		</dependency>
+	</dependencies>
+
+	<!--Build configuration -->
+	<build>
+		<plugins>
+			<!-- using Java 8 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<!-- Adde Install plug-in for installing the oracle jar -->
+			<!-- <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-install-plugin</artifactId>
+                <executions>
+                    <execution>
+                          <phase>initialize</phase>
+                          <goals>
+                               <goal>install-file</goal>
+                          </goals>
+                          <configuration>
+								<groupId>oracle</groupId>
+                                <artifactId>oracle-jdbc</artifactId>
+                                <version>11</version>
+                                <packaging>jar</packaging>
+                                <file>D:/SPRING ADVANCED/Softwares/jars/ojdbc6.jar</file>
+                          </configuration>
+                     </execution>
+                </executions>
+			</plugin> -->
+		</plugins>
+	</build>
+</project>

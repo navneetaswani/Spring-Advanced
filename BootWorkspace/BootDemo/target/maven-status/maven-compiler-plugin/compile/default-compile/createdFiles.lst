@@ -1,0 +1,4 @@
+com\ubs\config\WebSecurityConfig.class
+hello\WebSecurityConfig.class
+com\ubs\controller\FileController.class
+com\ubs\test\BootApp.class
